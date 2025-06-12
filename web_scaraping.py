@@ -9,8 +9,10 @@ driver = webdriver.Chrome()
 
 
 driver.get("https://www.linkedin.com/login")
-username = "hamzaasad4387@gmail.com"
-password = "soup4387h"
+# your email 
+username = ""
+# your password 
+password = ""
 driver.find_element(By.ID, "username").send_keys(username)
 driver.find_element(By.ID, "password").send_keys(password)
 driver.find_element(By.XPATH, "//button[@type='submit']").click()
